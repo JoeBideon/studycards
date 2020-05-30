@@ -34,9 +34,8 @@ function showAnswer(answer, show) {
     if (answer.style.display === "block") {
         answer.style.display = "none";
         show.innerText = "Show Answer";
-        return;
+    } else {
+        answer.style.display = "block";
+        show.innerText = "Hide Answer";
     }
-    answer.style.display = "block";
-    show.innerText = "Hide Answer";
-    return;
 }
